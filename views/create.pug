@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    style
+      include ../static/style.css
+</head>
+<body>
+    <section class="body">
+        <div class=contt>
+            img(src="/static/Checklist-pana.png", alt="picture ni diri" id="cpic")
+            <br>
+            <a href="/"><button id="home" class="button-19"> HOME </button></a>
+            <a href="/show"><button id="VIEW" class="button-19"> VIEW LIST </button></a>
+        </div>
+        <div class="cont">
+            <form action="/create" class="form" method="POST" autocomplete="off">
+               <br> <h1 class="attitle">ADD YOUR TASKS HERE!</h1>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="day" id="name" placeholder="Day">
+                <input type="text" name="task" id="task" placeholder="Task">
+                <p class="fromtext"> FROM:   <input type="time" name="from" id="time"> </p>
+                <p class="fromtext"> UPTO:   <input type="time" name="upto" id="time"> </p>
+            <button class="button-19">SUBMIT</button>
+            <br>
+            <h3>#{cont}</h3>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
